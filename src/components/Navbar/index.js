@@ -4,6 +4,7 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
+  Logo,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -12,13 +13,16 @@ import {
   NavBtnLink,
   NavRouter,
 } from "./NavbarElements";
+import logo from "../../images/logo.jpg";
 
 const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Breezy</NavLogo>
+          <NavLogo to="/">
+            <Logo src={logo}></Logo>
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

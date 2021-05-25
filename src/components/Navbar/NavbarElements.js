@@ -33,10 +33,18 @@ export const NavLogo = styled(LinkRouter)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-left: 24px;
   margin-right: 24px;
   font-weight: bold;
   text-decoration: none;
+`;
+
+export const Logo = styled.img`
+  height: 40px;
+  width: 140px;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const MobileIcon = styled.div`
