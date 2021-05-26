@@ -14,6 +14,8 @@ export const ContactHeading = styled.h1`
   margin: 16px;
   font-size: 28px;
   text-align: center;
+  font-family: Roboto;
+  font-weight: 400;
 `;
 
 export const ContactForm = styled.div`
@@ -60,6 +62,8 @@ export const IconLabel = styled.div`
   grid-area: col2;
   margin-left: 20px;
   float: left;
+  font-family: Roboto;
+  font-weight: 400;
 `;
 
 export const GPSIcon = styled(FaMapMarkerAlt)`

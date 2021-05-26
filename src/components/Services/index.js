@@ -51,7 +51,7 @@ const Services = () => {
         </ServicesCard>
       </ServicesWrapper>
       <ServicesBtnWrap>
-        <ButtonRouter to="./pricing"> Pricing </ButtonRouter>
+        <ButtonRouter to="./pricing" style={{"text-decoration": "none"}}> Pricing </ButtonRouter>
       </ServicesBtnWrap>
     </ServicesContainer>
   );

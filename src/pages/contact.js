@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Pricing from "../components/Pricing/index";
+import Contact from "../components/ContactSection/index";
 import OtherNavbar from "../components/OtherNavbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 
-const PricingPage = () => {
+const ContactPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -15,10 +15,10 @@ const PricingPage = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <OtherNavbar toggle={toggle} />
-      <Pricing></Pricing>
+      <Contact></Contact>
       <Footer></Footer>
     </>
   );
 };
 
-export default PricingPage;
+export default ContactPage;

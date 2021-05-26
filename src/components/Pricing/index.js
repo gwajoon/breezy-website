@@ -10,7 +10,10 @@ import {
   PricingList,
   PricingAction,
   PricingActionText,
+  PricingIcon
 } from "./PricingElements";
+import search from "../../images/search.svg";
+
 
 const Pricing = () => {
   return (
@@ -21,44 +24,41 @@ const Pricing = () => {
       </PricingH2>
       <PricingWrapper>
         <PricingCard>
-          <PricingH1> Core</PricingH1>
-          <Price>$39/mo</Price>
-          <PricingH2>
-            {" "}
-            For smaller businesses, with simple salaries, wages and pay
-            schedules.
-          </PricingH2>
-          <PricingList>Preparation & filing of annual return</PricingList>
-          <PricingList>
-            Appointment of director/corporate secretary/auditor
-          </PricingList>
-          <PricingList>it is a long esa</PricingList>
-        </PricingCard>
-        <PricingCard className="middle">
           <PricingH1> Basic</PricingH1>
-          <Price></Price>
+          <Price>$400 / 2 shareholders</Price>
           <PricingH2>
-            It is a long established fact that a reader will be distracted by{" "}
+           We believe in a relationship, not one where you pay every time you pick up the phone. Pay one yearly fee and get unlimited access to the following common services.
           </PricingH2>
-          <Price> $10.00</Price>
-          <PricingList>it is a long esa</PricingList>
-          <PricingList>it is a long esa</PricingList>
-          <PricingList>it is a long esa</PricingList>
-          <PricingAction>
-            <PricingActionText>Get started today</PricingActionText>
+          <PricingList>Preparation & filing of annual return (Inclusive of $60 ACRA fee) </PricingList>
+          <PricingList> Appointment of director/ corporate secretary/ auditor</PricingList>
+          <PricingList>Resignation of director/ corporate secretary/ auditor</PricingList>
+          <PricingList>Change in officer's particulars</PricingList>
+          <PricingList>Change of company name</PricingList>
+          <PricingList>Change of registered business address</PricingList>
+          <PricingList>Holding of AGM and filing of annual return </PricingList>
+          <PricingList>Declaration and distribution of dividends </PricingList>
+          <PricingList>Change of financial year end</PricingList>
+          <PricingList>Change of principal business activities (SSIC codes) </PricingList>
+          <PricingList>Share issuance and transfer (Ordinary & Preference)</PricingList>
+          <PricingH2>Our yearly fee excludes the following activities. We can assist you as needed.</PricingH2>
+          <PricingList style={{color: "#f59f0a"}}>Strike-off: $500</PricingList>
+          <PricingList style={{color: "#f59f0a"}}>Any ACRA late filing fees and penalties</PricingList>
+          <PricingAction style={{bottom: "0",
+            position: "absolute",
+            width: "100%",
+            "border-radius": "0 0 10px 10px"
+          }}>
+          <PricingActionText>Get started today</PricingActionText>
+        </PricingAction>
+        </PricingCard>
+        <PricingCard style={{"justify-content": "center", "align-items": "center"}}>
+          <PricingH1 style={{margin: "0"}}> Need other adhoc requirements? </PricingH1>
+          <PricingH1> Please contact us </PricingH1>
+          <PricingIcon src={search}/>
+          <PricingAction style={{ width: "300px", "border-radius": "5px"}}
+          to="/contact">
+            <PricingActionText>Contact us for more information</PricingActionText>
           </PricingAction>
-        </PricingCard>
-        <PricingCard>
-          <PricingH1> Basic</PricingH1>
-          <Price></Price>
-          <PricingH2>
-            {" "}
-            It is a long established fact that a reader will be distracted by{" "}
-          </PricingH2>
-          <Price> $10.00</Price>
-          <PricingList>it is a long esa</PricingList>
-          <PricingList>it is a long esa</PricingList>
-          <PricingList>it is a long esa</PricingList>
         </PricingCard>
       </PricingWrapper>
     </PricingContainer>

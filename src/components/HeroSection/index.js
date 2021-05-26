@@ -17,7 +17,7 @@ const HeroSection = () => {
   };
 
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroContent>
         <HeroH1>Welcome to Breezy</HeroH1>
         <HeroHeading>
@@ -29,8 +29,8 @@ const HeroSection = () => {
           make sure you can operate your company at ease.
         </HeroP>
         <HeroBtnWrapper>
-          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+          <Button smooth to="about" onMouseEnter={onHover} onMouseLeave={onHover}>
+            Find out more {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

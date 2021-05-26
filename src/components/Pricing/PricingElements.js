@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const PricingContainer = styled.div`
-  height: 700px;
+  height: 1000px;
   display: flex;
   background: #f8f5f2;
   flex-direction: column;
@@ -21,7 +22,7 @@ export const PricingWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
   padding: 0 50px;
@@ -42,23 +43,21 @@ export const PricingCard = styled.div`
   position: relative;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  margin-top: className="middle" ? 30px : 50px;
   border-radius: 10px;
-  height: 340px;
-  padding: 30px;
+  height: 750px;
   box-shadow: 0 1px 3px;
   transition: all 0.2s ease-in-out;
+  margin-top: 16px;
 
   &:hover {
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
-    cursor: pointer;
   }
 `;
 
-export const PricingTopLine = styled.div`
-  font-size: 2.5rem;
+export const PricingTopLine = styled.h1`
+  font-size: 24px;
+  font-family: Roboto;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
@@ -66,37 +65,51 @@ export const PricingTopLine = styled.div`
 `;
 
 export const PricingH1 = styled.h1`
-  font-size: 1rem;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin: 16px 24px;
+  font-family: Roboto;
+  font-weight: 500;
 `;
 
 export const PricingH2 = styled.p`
-  font-size: 0.8rem;
-  padding: 1rem;
-  margin-bottom: 10px;
+  font-size: 13px;
+  margin: 24px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: lightslategray;
 `;
 
 export const Price = styled.p`
-  font-size: 1rem;
+  font-size: 24px;
   text-align: center;
+  font-family: Roboto;
+  font-weight: 500;
+  color: #f59f0a;
 `;
 
 export const PricingList = styled.li`
-  font-size: 1rem;
-  text-align: center;
+  font-size: 13px;
+  text-align: left;
+  margin: 8px 24px;
+  font-family: Roboto;
+  font-weight: 400;
 `;
 
-export const PricingAction = styled.div`
-  background: #696969;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+export const PricingAction = styled(Link)`
+  background: #f9a825;
   height: 50px;
-  border-radius: 0 0 10px 10px;
+  text-decoration: none;
 `;
 
 export const PricingActionText = styled.div`
-  font-size: 1rem;
+  font-size: 14px;
   text-align: center;
   margin-top: 15px;
+  color: #fff;
+`;
+
+export const PricingIcon = styled.img`
+  height: 300px;
+  width: 300px;
+  margin-bottom: 10px;
 `;

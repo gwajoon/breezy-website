@@ -14,6 +14,7 @@ import {
   MailIcon,
   PhoneIcon,
 } from "./ContactElements";
+import QR from "../../images/qr-code.png"
 
 const ContactSection = ({
   big = true,
@@ -42,18 +43,12 @@ const ContactSection = ({
               <MailIcon />
               <IconLabel> +65 66669999</IconLabel>
             </Label>
-            <Label>
+            <Label style={{}}>
               <PhoneIcon />
               <IconLabel>breezy@breeze.com</IconLabel>
             </Label>
-            <iframe
-              title="Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.824985635592!2d103.83952795118546!3d1.2785504990628904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19895d718f9b%3A0xa17742dff878f090!2sShake%20Shack%2089%20Neil%20Road!5e0!3m2!1sen!2ssg!4v1621851261879!5m2!1sen!2ssg"
-              margin="20"
-              width="350"
-              height="270"
-              frameBorder="0"
-            ></iframe>
+            <IconLabel style={{"text-align": "left", margin: "30px 0 0 10px"}}>Scan here to contact us on WhatsApp:</IconLabel>
+            <img src={QR} style={{height: "200px", width: "200px", margin: "15px 0 0 40px"}}/>
           </Column2>
         </ContactContent>
       </ContactForm>

@@ -49,8 +49,8 @@ const AboutSection = () => {
             Institute of Singapore Chartered Accountants.
           </AboutP>
           <AboutBtnWrapper>
-            <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}>
-              View More {hover ? <ArrowForward /> : <ArrowRight />}
+            <Button smooth to="services" onMouseEnter={onHover} onMouseLeave={onHover}>
+              Services {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </AboutBtnWrapper>
         </AboutContent>
