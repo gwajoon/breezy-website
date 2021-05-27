@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
   align-items: center;
 
   @media screen and (max-width: 480px) {
-    width: 770px;
+    width: 860px;
   }
 `;
 
@@ -62,7 +62,7 @@ export const FooterContentTitle = styled.h1`
   margin-bottom: 16px;
   
   @media screen and (max-width: 480px) {
-    font-size: 12px;
+    font-size: 16px;
   }
 `;
 

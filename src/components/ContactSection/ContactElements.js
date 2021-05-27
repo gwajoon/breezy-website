@@ -9,7 +9,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
   
   @media screen and (max-width: 480px) {
-    width: 650px;
+    width: 850px;
   }
 `;
 
@@ -34,7 +34,7 @@ export const ContactForm = styled.div`
 
   @media screen and (max-width: 480px) {
     height: 650px;
-    width: 300px;
+    width: 500px;
     padding: 20px;
   }
 `;
@@ -55,7 +55,8 @@ export const Column1 = styled.div`
   @media screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
+    margin-left: 25px;
   }
 `;
 
@@ -66,7 +67,7 @@ export const Column2 = styled.div`
   flex-direction: column;
 
   @media screen and (max-width: 480px) {
-    margin-left: 40px;
+    margin-left: 25px;
   }
 `;
 
@@ -90,7 +91,7 @@ export const IconLabel = styled.div`
   font-weight: 400;
 
   @media screen and (max-width: 480px) {
-    font-size: 14px;
+    font-size: 18px;
   }
 `;
 
@@ -101,7 +102,7 @@ export const GPSIcon = styled(FaMapMarkerAlt)`
   height: 20px;
 
   @media screen and (max-width: 480px) {
-    height: 16px;
+    height: 20px;
   }
 `;
 
@@ -112,7 +113,7 @@ export const PhoneIcon = styled(FaPhoneAlt)`
   height: 20px;
 
   @media screen and (max-width: 480px) {
-    height: 16px;
+    height: 20px;
   }
 `;
 
@@ -123,7 +124,7 @@ export const MailIcon = styled(FaEnvelope)`
   height: 20px;
 
   @media screen and (max-width: 480px) {
-    height: 16px;
+    height: 20px;
   }
 `;
 
@@ -137,7 +138,7 @@ export const FormInput = styled.input`
   grid-area: col1;
 
   @media screen and (max-width: 480px) {
-    width: 240px;
+    width: 400px;
   }
 `;
 
@@ -154,7 +155,7 @@ export const FormButton = styled.button`
   grid-area: col1;
 
   @media screen and (max-width: 480px) {
-    width: 240px;
+    width: 400px;
   }
 `;
 

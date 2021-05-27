@@ -6,11 +6,12 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 700px;
   position: relative;
 
   @media screen and (max-width: 480px) {
-    width: 770px;
+    width: 850px;
+    height: 900px;
   }
 `;
 
@@ -20,6 +21,7 @@ export const HeroContent = styled.div`
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
+  margin-right: 400px;
 `;
 
 export const HeroHeading = styled.h1`
@@ -30,11 +32,7 @@ export const HeroHeading = styled.h1`
   font-family: Roboto, sans-serif;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 50px;
   }
 `;
 
@@ -45,11 +43,7 @@ export const HeroH1 = styled.div`
   font-family: Roboto, sans-serif;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 12px;
+    font-size: 30px;
   }
 `;
 
@@ -61,11 +55,7 @@ export const HeroP = styled.p`
   font-family: Roboto, sans-serif;
 
   @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 28px;
   }
 `;
 
@@ -75,3 +65,13 @@ export const HeroBtnWrapper = styled.div`
   display: flex;
   align-items: center;
 `;
+
+export const HeroImg = styled.img `
+  height: 1000px;
+  width: 1000px;
+  margin-left: 500px;
+  
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+  }
+`

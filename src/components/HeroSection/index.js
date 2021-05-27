@@ -6,8 +6,10 @@ import {
   HeroHeading,
   HeroP,
   HeroBtnWrapper,
+  HeroImg
 } from "./HeroElements";
 import { Button, ArrowForward, ArrowRight } from "../ButtonElements";
+import Pic from "../../images/svg-2.svg"
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -18,6 +20,7 @@ const HeroSection = () => {
 
   return (
     <HeroContainer id="home">
+      <HeroImg src={Pic}/>
       <HeroContent>
         <HeroH1>Welcome to Breezy</HeroH1>
         <HeroHeading>

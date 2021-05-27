@@ -26,17 +26,19 @@ export const Button = styled(Link)`
   }
 
   @media screen and (max-width: 768px) {
-    height: 35px;
-    font-size: 14px;
+    height: 60px;
+    font-size: 25px;
   }
 `;
 
 export const ButtonRouter = styled(Router)`
   border-radius: 10px;
   height: 60px;
+  width: 300px;
   background: #f9a825;
   white-space: nowrap;
   padding: 12px 30px;
+  margin-left: 30px;
   color: #fff;
   font-size: 16px;
   font-family: Roboto, sans-serif;
@@ -51,6 +53,13 @@ export const ButtonRouter = styled(Router)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #000;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    height: 80px;
+    width: 560px;
+    font-size: 20px;
   }
 `;
 

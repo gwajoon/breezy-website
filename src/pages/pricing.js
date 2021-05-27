@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Pricing from "../components/Pricing/index";
 import OtherNavbar from "../components/OtherNavbar";
-import Sidebar from "../components/Sidebar";
+import OtherSidebar from "../components/OtherSidebar";
 import Footer from "../components/Footer";
 
 const PricingPage = () => {
@@ -13,7 +13,7 @@ const PricingPage = () => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <OtherSidebar isOpen={isOpen} toggle={toggle} />
       <OtherNavbar toggle={toggle} />
       <Pricing></Pricing>
       <Footer></Footer>

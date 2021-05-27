@@ -10,8 +10,8 @@ export const PricingContainer = styled.div`
   align-items: center;
 
   @media screen and (max-width: 700px) {
-    height: 1800px;
-    width: 650px;
+    height: 2600px;
+    width: 850px;
   }
 `;
 
@@ -23,11 +23,7 @@ export const PricingWrapper = styled.div`
   align-items: center;
   grid-gap: 16px;
   padding: 0 50px;
-
-  @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
+  
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
@@ -50,11 +46,21 @@ export const PricingCard = styled.div`
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
   }
+
+  @media screen and (max-width: 768px) {
+    height: 1100px;
+    width: 750px;
+    margin: 40px;
+  }
 `;
 
 export const PricingTopLine = styled.h1`
   font-size: 24px;
   font-family: Roboto;
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 export const PricingH1 = styled.h1`
@@ -62,6 +68,10 @@ export const PricingH1 = styled.h1`
   margin: 16px 24px;
   font-family: Roboto;
   font-weight: 500;
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 export const PricingH2 = styled.p`
@@ -70,6 +80,10 @@ export const PricingH2 = styled.p`
   font-family: Roboto;
   font-weight: 400;
   color: lightslategray;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const Price = styled.p`
@@ -78,6 +92,10 @@ export const Price = styled.p`
   font-family: Roboto;
   font-weight: 500;
   color: #f59f0a;
+
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+  }
 `;
 
 export const PricingList = styled.li`
@@ -86,6 +104,10 @@ export const PricingList = styled.li`
   margin: 8px 24px;
   font-family: Roboto;
   font-weight: 400;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const PricingAction = styled(Link)`
@@ -99,6 +121,10 @@ export const PricingActionText = styled.div`
   text-align: center;
   margin-top: 15px;
   color: #fff;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export const PricingIcon = styled.img`

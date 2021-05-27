@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   background: #f8f5f2;
   display: flex;
-  height: 800px;
+  height: 700px;
   align-items: center;
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    width: 770px;
+    height: 1000px;
+    width: 850px;
     flex-direction: column;
   }
 `;
@@ -16,7 +17,7 @@ export const AboutContainer = styled.div`
 export const AboutContent = styled.div`
   align-items: center;
   justify-content: center;
-  margin-left: 10px;
+  margin-left: 100px;
 `;
 
 export const AboutHeading = styled.h1`
@@ -26,7 +27,7 @@ export const AboutHeading = styled.h1`
   text-align: left;
 
   @media screen and (max-width: 768px) {
-    font-size: 20px;
+    font-size: 40px;
     margin-left: 250px;
     margin-top: 50px;
   }
@@ -42,7 +43,7 @@ export const AboutP = styled.p`
   white-space: pre-wrap;
 
   @media screen and (max-width: 768px) {
-    font-size: 8px;
+    font-size: 24px;
   }
 `;
 
@@ -55,7 +56,7 @@ export const AboutBtnWrapper = styled.div`
   @media screen and (max-width: 768px) {
     margin-top: 0;
     margin-left: 250px;
-    padding: 0;
+    padding-top: 30px;
   }
 `;
 
@@ -71,6 +72,6 @@ export const Img = styled.img`
   border-radius: 25%;
   
   @media screen and (max-width: 768px) {
-    width: 300px;
+    width: 400px;
   }
 `;
