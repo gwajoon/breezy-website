@@ -38,14 +38,6 @@ const Footer = () => {
       <SocialMedia>
         <SocialMediaWrap>
           <WebsiteRights> Breezy © 2021 All rights reserved.</WebsiteRights>
-          <SocialIcons>
-            <SocialIconLinks href="/" target="_blank" aria-label="Facebook">
-              <FaFacebook />
-            </SocialIconLinks>
-            <SocialIconLinks href="/" target="_blank" aria-label="Instagram">
-              <FaInstagram />
-            </SocialIconLinks>
-          </SocialIcons>
         </SocialMediaWrap>
       </SocialMedia>
     </FooterContainer>

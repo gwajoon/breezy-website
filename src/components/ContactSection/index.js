@@ -13,14 +13,12 @@ import {
   GPSIcon,
   MailIcon,
   PhoneIcon,
+  Whatsapp
 } from "./ContactElements";
 import QR from "../../images/qr-code.png"
 
 const ContactSection = ({
   big = true,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaPhoneAlt,
 }) => {
   return (
     <ContactContainer id="contact">
@@ -47,8 +45,10 @@ const ContactSection = ({
               <PhoneIcon />
               <IconLabel>breezy@breeze.com</IconLabel>
             </Label>
-            <IconLabel style={{"text-align": "left", margin: "30px 0 0 10px"}}>Scan here to contact us on WhatsApp:</IconLabel>
-            <img src={QR} style={{height: "200px", width: "200px", margin: "15px 0 0 40px"}}/>
+            <Whatsapp>
+              <IconLabel style={{"text-align": "left", margin: "30px 0 0 10px"}}>Scan here to contact us on WhatsApp:</IconLabel>
+              <img src={QR} style={{height: "200px", width: "200px", margin: "15px 0 0 40px"}}/>
+            </Whatsapp>
           </Column2>
         </ContactContent>
       </ContactForm>

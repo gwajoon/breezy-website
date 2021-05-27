@@ -6,11 +6,11 @@ import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 export const Button = styled(Link)`
   border-radius: 10px;
   height: 60px;
-  background: ${({ primary }) => (primary ? "#010606" : "#f9a825")};
+  background: #f9a825;
   white-space: nowrap;
-  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  padding: 12px 30px;
+  color: #fff;
+  font-size: 16px;
   font-family: Roboto, sans-serif;
   outline: none;
   border: none;
@@ -24,16 +24,21 @@ export const Button = styled(Link)`
     transition: all 0.2s ease-in-out;
     background: #000;
   }
+
+  @media screen and (max-width: 768px) {
+    height: 35px;
+    font-size: 14px;
+  }
 `;
 
 export const ButtonRouter = styled(Router)`
   border-radius: 10px;
   height: 60px;
-  background: ${({ primary }) => (primary ? "#010606" : "#f9a825")};
+  background: #f9a825;
   white-space: nowrap;
-  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  padding: 12px 30px;
+  color: #fff;
+  font-size: 16px;
   font-family: Roboto, sans-serif;
   outline: none;
   border: none;

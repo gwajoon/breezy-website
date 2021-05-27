@@ -17,6 +17,7 @@ export const Nav = styled.nav`
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
+    width: 650px;
   }
 `;
 
@@ -88,15 +89,6 @@ export const NavLinks = styled(LinkScroll)`
 
   &.active {
     border-bottom: 6px solid #f59f0a;
-  }
-`;
-
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
   }
 `;
 

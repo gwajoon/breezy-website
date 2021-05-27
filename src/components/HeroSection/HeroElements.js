@@ -8,7 +8,10 @@ export const HeroContainer = styled.div`
   padding: 0 30px;
   height: 800px;
   position: relative;
-  z-index: 1;
+
+  @media screen and (max-width: 480px) {
+    width: 770px;
+  }
 `;
 
 export const HeroContent = styled.div`
@@ -17,7 +20,6 @@ export const HeroContent = styled.div`
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
-  align-items: left;
 `;
 
 export const HeroHeading = styled.h1`

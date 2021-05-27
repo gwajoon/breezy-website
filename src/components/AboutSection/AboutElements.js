@@ -6,24 +6,17 @@ export const AboutContainer = styled.div`
   height: 800px;
   align-items: center;
   justify-content: center;
-  padding: 0 100px;
+
+  @media screen and (max-width: 768px) {
+    width: 770px;
+    flex-direction: column;
+  }
 `;
 
 export const AboutContent = styled.div`
   align-items: center;
   justify-content: center;
-`;
-
-export const Column1 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 30px;
-  grid-area: col1;
-`;
-
-export const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 30px;
-  grid-area: col2;
+  margin-left: 10px;
 `;
 
 export const AboutHeading = styled.h1`
@@ -33,11 +26,9 @@ export const AboutHeading = styled.h1`
   text-align: left;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 20px;
+    margin-left: 250px;
+    margin-top: 50px;
   }
 `;
 
@@ -45,17 +36,13 @@ export const AboutP = styled.p`
   margin: 16px;
   color: #404344;
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   text-align: left;
   max-width: 700px;
   white-space: pre-wrap;
 
   @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 8px;
   }
 `;
 
@@ -64,10 +51,15 @@ export const AboutBtnWrapper = styled.div`
   padding-left: 20px;
   display: flex;
   align-items: center;
+  
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    margin-left: 250px;
+    padding: 0;
+  }
 `;
 
 export const ImgWrap = styled.div`
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,4 +69,8 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
   width: 500px;
   border-radius: 25%;
+  
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
 `;

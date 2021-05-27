@@ -63,27 +63,19 @@ export const SidebarLink = styled(LinkScroll)`
   }
 `;
 
-export const SideBtnWrap = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
 export const SidebarRoute = styled(LinkRouter)`
-  border-radius: 50px;
-  background: #f9a825;
-  white-space: nowrap;
-  padding: 16px 64px;
-  color: #010606;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  list-style: none;
+  transition: 0.2s ease-in-out;
   text-decoration: none;
+  color: #fff;
+  cursor: pointer;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    color: #f9a825;
+    transition: 0.2s ease-in-out;
   }
 `;

@@ -4,8 +4,6 @@ import {
   AboutContent,
   AboutHeading,
   AboutP,
-  Column1,
-  Column2,
   ImgWrap,
   Img,
   AboutBtnWrapper,
@@ -23,12 +21,9 @@ const AboutSection = () => {
 
   return (
     <AboutContainer id="about">
-      <Column1>
         <ImgWrap>
           <Img src={Pic1} />
         </ImgWrap>
-      </Column1>
-      <Column2>
         <AboutContent>
           <AboutHeading>About Breezy</AboutHeading>
           <AboutP>
@@ -54,7 +49,6 @@ const AboutSection = () => {
             </Button>
           </AboutBtnWrapper>
         </AboutContent>
-      </Column2>
     </AboutContainer>
   );
 };

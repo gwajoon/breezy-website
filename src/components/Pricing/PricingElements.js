@@ -10,11 +10,8 @@ export const PricingContainer = styled.div`
   align-items: center;
 
   @media screen and (max-width: 700px) {
-    height: 1100px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: 1800px;
+    width: 650px;
   }
 `;
 
@@ -58,10 +55,6 @@ export const PricingCard = styled.div`
 export const PricingTopLine = styled.h1`
   font-size: 24px;
   font-family: Roboto;
-
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
-  }
 `;
 
 export const PricingH1 = styled.h1`

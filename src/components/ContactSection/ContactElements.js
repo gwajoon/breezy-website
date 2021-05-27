@@ -7,6 +7,10 @@ export const ContactContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  @media screen and (max-width: 480px) {
+    width: 650px;
+  }
 `;
 
 export const ContactHeading = styled.h1`
@@ -25,22 +29,34 @@ export const ContactForm = styled.div`
   display: flex;
   flex-direction: column;
   padding: 100px;
-  display: flex;
   justify-content: center;
   box-shadow: 2px 2px 7px grey;
 
   @media screen and (max-width: 480px) {
-    padding: 10px;
+    height: 650px;
+    width: 300px;
+    padding: 20px;
+  }
 `;
 
 export const ContactContent = styled.div`
   display: flex;
   flex-direction: row;
+  
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const Column1 = styled.div`
   margin: 10px;
   width: 450px;
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
 `;
 
 export const Column2 = styled.div`
@@ -48,12 +64,20 @@ export const Column2 = styled.div`
   width: 300px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 480px) {
+    margin-left: 40px;
+  }
 `;
 
 export const Label = styled.div`
   margin: 15px;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    margin: 8px;
+  }
 `;
 
 export const IconLabel = styled.div`
@@ -64,6 +88,10 @@ export const IconLabel = styled.div`
   float: left;
   font-family: Roboto;
   font-weight: 400;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 export const GPSIcon = styled(FaMapMarkerAlt)`
@@ -71,6 +99,10 @@ export const GPSIcon = styled(FaMapMarkerAlt)`
   grid-area: col2;
   float: left;
   height: 20px;
+
+  @media screen and (max-width: 480px) {
+    height: 16px;
+  }
 `;
 
 export const PhoneIcon = styled(FaPhoneAlt)`
@@ -78,6 +110,10 @@ export const PhoneIcon = styled(FaPhoneAlt)`
   grid-area: col2;
   float: left;
   height: 20px;
+
+  @media screen and (max-width: 480px) {
+    height: 16px;
+  }
 `;
 
 export const MailIcon = styled(FaEnvelope)`
@@ -85,13 +121,10 @@ export const MailIcon = styled(FaEnvelope)`
   color: #f45d48;
   float: left;
   height: 20px;
-`;
 
-export const FormH1 = styled.h1`
-  margin-bottom: 40px;
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
+  @media screen and (max-width: 480px) {
+    height: 16px;
+  }
 `;
 
 export const FormInput = styled.input`
@@ -102,6 +135,10 @@ export const FormInput = styled.input`
   width: 400px;
   padding-bottom: ${({ big }) => (big ? "140px" : "10px")};
   grid-area: col1;
+
+  @media screen and (max-width: 480px) {
+    width: 240px;
+  }
 `;
 
 export const FormButton = styled.button`
@@ -115,4 +152,14 @@ export const FormButton = styled.button`
   cursor: pointer;
   width: 400px;
   grid-area: col1;
+
+  @media screen and (max-width: 480px) {
+    width: 240px;
+  }
+`;
+
+export const Whatsapp = styled.div `
+  @media screen and (max-width: 760px) {
+    display: none;
+  }
 `;
