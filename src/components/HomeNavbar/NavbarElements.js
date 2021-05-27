@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 import { Link as LinkRouter } from "react-router-dom";
-import {Route,Switch} from 'react-router-dom'
-
 
 export const Nav = styled.nav`
   background: #fff;

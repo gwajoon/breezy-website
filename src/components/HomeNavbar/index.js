@@ -62,12 +62,7 @@ const HomeNavbar = ({ toggle }) => {
               <NavRouter to="contact">Contact Us</NavRouter>
             </NavItem>
             <NavItem>
-              <NavLinks to="guides"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        exact="true"
-                        >Guides and Resources</NavLinks>
+              <NavRouter to="guides">Guides and Resources</NavRouter>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

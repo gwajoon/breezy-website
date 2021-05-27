@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import React from "react";
 
 export const ContactContainer = styled.div`
   height: 800px;
@@ -10,6 +11,7 @@ export const ContactContainer = styled.div`
   
   @media screen and (max-width: 480px) {
     width: 850px;
+    height: 900px;
   }
 `;
 
@@ -23,7 +25,7 @@ export const ContactHeading = styled.h1`
 `;
 
 export const ContactForm = styled.div`
-  height: 550px;
+  height: 700px;
   width: 1000px;
   background: #fff;
   display: flex;
@@ -33,7 +35,7 @@ export const ContactForm = styled.div`
   box-shadow: 2px 2px 7px grey;
 
   @media screen and (max-width: 480px) {
-    height: 650px;
+    height: 800px;
     width: 500px;
     padding: 20px;
   }
@@ -162,5 +164,20 @@ export const FormButton = styled.button`
 export const Whatsapp = styled.div `
   @media screen and (max-width: 760px) {
     display: none;
+  }
+`;
+
+export const SubmitMessage = styled.div `
+  font-size: 20px;
+  text-align: center;
+  justify-items: center;
+  font-family: Roboto;
+  color: black;
+  height: 50px;
+  width: 400px;
+  margin-top: 30px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
   }
 `;
