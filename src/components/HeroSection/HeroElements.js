@@ -16,12 +16,17 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroContent = styled.div`
-  max-width: 1000px;
+  max-width: 800px;
   position: absolute;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
-  margin-right: 400px;
+  margin-right: 700px;
+
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+    margin-bottom: 200px;
+  }
 `;
 
 export const HeroHeading = styled.h1`
@@ -67,11 +72,14 @@ export const HeroBtnWrapper = styled.div`
 `;
 
 export const HeroImg = styled.img `
-  height: 1000px;
-  width: 1000px;
-  margin-left: 500px;
+  height: 600px;
+  width: 1200px;
+  margin-left: 700px;
   
   @media screen and (max-width: 768px) {
     margin-left: 0;
+    margin-top: 500px;
+    height: 450px;
+    width: 900px;
   }
 `

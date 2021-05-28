@@ -10,7 +10,7 @@ import {
 } from "./AboutElements";
 import { Button, ArrowForward, ArrowRight } from "../ButtonElements";
 
-import Pic1 from "../../images/svg-1.svg";
+import aboutPic from "../../images/about.png";
 
 const AboutSection = () => {
   const [hover, setHover] = useState(false);
@@ -22,7 +22,7 @@ const AboutSection = () => {
   return (
     <AboutContainer id="about">
         <ImgWrap>
-          <Img src={Pic1} />
+          <Img src={aboutPic} />
         </ImgWrap>
         <AboutContent>
           <AboutHeading>About Breezy</AboutHeading>

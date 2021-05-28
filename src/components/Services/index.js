@@ -1,6 +1,6 @@
 import React from "react";
-import Icon1 from "../../images/svg-1.svg";
-import Icon2 from "../../images/svg-2.svg";
+import Icon1 from "../../images/card1.svg";
+import Icon2 from "../../images/card2.svg";
 import Icon3 from "../../images/svg-3.svg";
 import {
   ServicesContainer,
@@ -30,7 +30,7 @@ const Services = () => {
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2} />
+          <ServicesIcon src={Icon2} style={{height: "200px", width: "200px"}} />
           <ServicesHeading> Online Corporate Secretary</ServicesHeading>
           <ServicesP>
             {" "}
@@ -40,7 +40,7 @@ const Services = () => {
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} />
+          <ServicesIcon src={Icon3} style={{height: "180px"}} />
           <ServicesHeading> Accounting and Taxation Advisory</ServicesHeading>
           <ServicesP>
             {" "}

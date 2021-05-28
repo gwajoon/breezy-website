@@ -6,9 +6,10 @@ export const AboutContainer = styled.div`
   height: 700px;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   @media screen and (max-width: 768px) {
-    height: 1000px;
+    height: 1200px;
     width: 850px;
     flex-direction: column;
   }
@@ -17,19 +18,23 @@ export const AboutContainer = styled.div`
 export const AboutContent = styled.div`
   align-items: center;
   justify-content: center;
-  margin-left: 100px;
+  margin-left: 900px;
+  position: absolute;
+
+  @media screen and (max-width: 480px) {
+    margin-left: 0;
+    margin-bottom: 200px;
+  }
 `;
 
 export const AboutHeading = styled.h1`
   color: black;
   margin: 16px;
   font-size: 28px;
-  text-align: left;
+  text-align: center;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
-    margin-left: 250px;
-    margin-top: 50px;
   }
 `;
 
@@ -50,13 +55,14 @@ export const AboutP = styled.p`
 export const AboutBtnWrapper = styled.div`
   margin-top: 32px;
   padding-left: 20px;
+  margin-left: 250px;
   display: flex;
   align-items: center;
   
   @media screen and (max-width: 768px) {
     margin-top: 0;
     margin-left: 250px;
-    padding-top: 30px;
+    padding-top: 15px;  
   }
 `;
 
@@ -68,10 +74,14 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 500px;
+  width: 1000px;
   border-radius: 25%;
+  margin-right: 700px;
   
   @media screen and (max-width: 768px) {
-    width: 400px;
+    width: 800px;  
+    margin-top: 800px;
+    margin-right: 0;
+    opacity: 100%;
   }
 `;

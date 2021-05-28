@@ -9,7 +9,7 @@ import {
   HeroImg
 } from "./HeroElements";
 import { Button, ArrowForward, ArrowRight } from "../ButtonElements";
-import Pic from "../../images/svg-2.svg"
+import homePic from "../../images/home.png"
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -20,7 +20,7 @@ const HeroSection = () => {
 
   return (
     <HeroContainer id="home">
-      <HeroImg src={Pic}/>
+      <HeroImg src={homePic}/>
       <HeroContent>
         <HeroH1>Welcome to Breezy</HeroH1>
         <HeroHeading>

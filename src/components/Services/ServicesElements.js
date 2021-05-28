@@ -59,8 +59,8 @@ export const ServicesCard = styled.div`
 `;
 
 export const ServicesIcon = styled.img`
-  height: 160px;
-  width: 160px;
+  height: 200px;
+  width: 200px;
   margin-bottom: 10px;
 
   @media screen and (max-width: 480px) {
