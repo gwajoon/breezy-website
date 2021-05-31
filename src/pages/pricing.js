@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Pricing from "../components/Pricing/index";
+import Pricing from "../components/PricingSection/index";
 import OtherNavbar from "../components/OtherNavbar";
 import OtherSidebar from "../components/OtherSidebar";
 import Footer from "../components/Footer";
