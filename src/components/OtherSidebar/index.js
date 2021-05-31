@@ -5,7 +5,6 @@ import {
   CloseIcon,
   SidebarWrapper,
   SidebarMenu,
-  SidebarLink,
   SidebarRoute,
 } from "./OtherSidebarElements";
 

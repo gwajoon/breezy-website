@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  background: #f8f5f2;
+  background: #161637;
   display: flex;
+  height: 700px;
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 700px;
   position: relative;
 
   @media screen and (max-width: 480px) {
@@ -21,7 +21,6 @@ export const HeroContent = styled.div`
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
-  margin-right: 700px;
 
   @media screen and (max-width: 480px) {
     margin-right: 0;
@@ -29,12 +28,13 @@ export const HeroContent = styled.div`
   }
 `;
 
-export const HeroHeading = styled.h1`
+export const HeroHeading = styled.div`
   font-size: 48px;
-  text-align: left;
+  text-align: center;
   padding: 8px 24px;
-  color: #f45d48;
-  font-family: Roboto, sans-serif;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-weight: 500;
 
   @media screen and (max-width: 768px) {
     font-size: 50px;
@@ -42,10 +42,12 @@ export const HeroHeading = styled.h1`
 `;
 
 export const HeroH1 = styled.div`
-  font-size: 18px;
-  text-align: left;
+  color: #f59f0a;
+  font-size: 24px;
+  text-align: center;
   padding: 8px 24px;
-  font-family: Roboto, sans-serif;
+  font-family: "Playfair Display";
+  font-weight: 400;
 
   @media screen and (max-width: 768px) {
     font-size: 30px;
@@ -53,11 +55,13 @@ export const HeroH1 = styled.div`
 `;
 
 export const HeroP = styled.p`
+  color: #fff;
   padding: 8px 24px;
   font-size: 18px;
-  text-align: left;
+  text-align: center;
   max-width: 1100px;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
+  font-weight: 300;
 
   @media screen and (max-width: 768px) {
     font-size: 28px;
@@ -65,21 +69,21 @@ export const HeroP = styled.p`
 `;
 
 export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
+  margin-top: 20px;
   padding-left: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
-export const HeroImg = styled.img `
-  height: 600px;
-  width: 1200px;
-  margin-left: 700px;
-  
+export const HeroImg = styled.img`
+  height: 100%;
+  width: 100%;
+
   @media screen and (max-width: 768px) {
     margin-left: 0;
     margin-top: 500px;
     height: 450px;
     width: 900px;
   }
-`
+`;

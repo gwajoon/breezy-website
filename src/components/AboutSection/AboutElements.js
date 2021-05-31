@@ -7,19 +7,18 @@ export const AboutContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 0 30px;
+  flex-direction: row;
 
   @media screen and (max-width: 768px) {
     height: 1200px;
     width: 850px;
-    flex-direction: column;
   }
 `;
 
 export const AboutContent = styled.div`
   align-items: center;
   justify-content: center;
-  margin-left: 900px;
-  position: absolute;
 
   @media screen and (max-width: 480px) {
     margin-left: 0;
@@ -32,6 +31,7 @@ export const AboutHeading = styled.h1`
   margin: 16px;
   font-size: 28px;
   text-align: center;
+  font-family: "Playfair Display";
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -43,6 +43,7 @@ export const AboutP = styled.p`
   color: #404344;
   font-size: 18px;
   font-family: Roboto, sans-serif;
+  font-weight: 300;
   text-align: left;
   max-width: 700px;
   white-space: pre-wrap;
@@ -54,15 +55,14 @@ export const AboutP = styled.p`
 
 export const AboutBtnWrapper = styled.div`
   margin-top: 32px;
-  padding-left: 20px;
-  margin-left: 250px;
+  margin-left: 15px;
   display: flex;
   align-items: center;
-  
+
   @media screen and (max-width: 768px) {
     margin-top: 0;
     margin-left: 250px;
-    padding-top: 15px;  
+    padding-top: 15px;
   }
 `;
 
@@ -74,12 +74,11 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 1000px;
+  width: 700px;
   border-radius: 25%;
-  margin-right: 700px;
-  
+
   @media screen and (max-width: 768px) {
-    width: 800px;  
+    width: 800px;
     margin-top: 800px;
     margin-right: 0;
     opacity: 100%;

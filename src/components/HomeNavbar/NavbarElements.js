@@ -2,15 +2,13 @@ import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 import { Link as LinkRouter } from "react-router-dom";
 
-export const Nav = styled.nav`
-  background: #fff;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
+export const NavbarContainer = styled.div`
+  background: #1d1d44;
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
   z-index: 10;
 
   @media screen and (max-width: 960px) {
@@ -19,31 +17,17 @@ export const Nav = styled.nav`
   }
 `;
 
-export const NavbarContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  z-index: 1;
-  width: 100%;
-  max-width: 1500px;
-`;
-
 export const NavLogo = styled(LinkRouter)`
-  justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-left: 24px;
   margin-right: 24px;
-  font-weight: bold;
-  text-decoration: none;
 `;
 
 export const Logo = styled.img`
-  height: 40px;
-  width: 140px;
+  height: 70px;
+  width: 120px;
   justify-content: center;
   align-items: center;
 `;
@@ -78,46 +62,32 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-family: Roboto;
+  font-weight: 300;
 
   &.active {
     border-bottom: 6px solid #f59f0a;
   }
 `;
 
-export const NavBtnLink = styled(LinkRouter)`
-  border-radius: 50px;
-  background: #f59f0a;
-  white-space: nowrap;
-  padding: 10px 22px;
-  color: #010606;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
-  }
-`;
-
 export const NavRouter = styled(LinkRouter)`
-  color: black;
+  color: #fff;
+  font-family: "Roboto":wght@300;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-family: Roboto;
+  font-weight: 300;
 
   &.active {
     border-bottom: 6px solid #f59f0a;

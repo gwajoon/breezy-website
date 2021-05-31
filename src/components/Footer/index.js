@@ -1,5 +1,4 @@
 import React from "react";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
@@ -12,8 +11,6 @@ import {
   SocialMediaWrap,
   SocialLogo,
   WebsiteRights,
-  SocialIcons,
-  SocialIconLinks,
 } from "./FooterElements";
 
 const Footer = () => {

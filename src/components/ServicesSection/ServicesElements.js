@@ -88,6 +88,7 @@ export const ServicesHeading = styled.h2`
   text-align: center;
   margin: 10px 0;
   font-family: Roboto, sans-serif;
+  font-weight: 4s00;
 
   @media screen and (max-width: 480px) {
     font-size: 2.5rem;
@@ -98,7 +99,8 @@ export const ServicesHeading = styled.h2`
 export const ServicesP = styled.p`
   font-size: 14px;
   text-align: center;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto, sans-serif";
+  font-weight: 300;
 
   @media screen and (max-width: 480px) {
     font-size: 30px;

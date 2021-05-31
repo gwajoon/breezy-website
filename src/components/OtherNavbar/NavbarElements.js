@@ -3,7 +3,7 @@ import { Link as LinkScroll } from "react-scroll";
 import { Link as LinkRouter } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background: #fff;
+  background: #1d1d44;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -78,12 +78,15 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-family: Roboto;
+  font-weight: 300;
 
   &.active {
     border-bottom: 6px solid #f59f0a;
@@ -91,13 +94,16 @@ export const NavLinks = styled(LinkScroll)`
 `;
 
 export const NavRouter = styled(LinkRouter)`
-  color: black;
+  color: #fff;
+  font-family: "Roboto":wght@300;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-family: Roboto;
+  font-weight: 300;
 
   &.active {
     border-bottom: 6px solid #f59f0a;

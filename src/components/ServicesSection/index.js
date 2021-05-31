@@ -12,7 +12,7 @@ import {
   ServicesP,
   ServicesBtnWrap,
 } from "./ServicesElements";
-import { ButtonRouter } from "../ButtonElements";
+import { Button } from "../ButtonElements";
 
 const Services = () => {
   return (
@@ -30,7 +30,10 @@ const Services = () => {
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2} style={{height: "200px", width: "200px"}} />
+          <ServicesIcon
+            src={Icon2}
+            style={{ height: "200px", width: "200px" }}
+          />
           <ServicesHeading> Online Corporate Secretary</ServicesHeading>
           <ServicesP>
             {" "}
@@ -40,7 +43,7 @@ const Services = () => {
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} style={{height: "180px"}} />
+          <ServicesIcon src={Icon3} style={{ height: "180px" }} />
           <ServicesHeading> Accounting and Taxation Advisory</ServicesHeading>
           <ServicesP>
             {" "}
@@ -51,7 +54,10 @@ const Services = () => {
         </ServicesCard>
       </ServicesWrapper>
       <ServicesBtnWrap>
-        <ButtonRouter to="./pricing" style={{"text-decoration": "none"}}> Pricing </ButtonRouter>
+        <Button to="pricing" style={{ "text-decoration": "none" }}>
+          {" "}
+          Pricing{" "}
+        </Button>
       </ServicesBtnWrap>
     </ServicesContainer>
   );

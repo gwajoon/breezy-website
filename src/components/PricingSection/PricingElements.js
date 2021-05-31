@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const PricingContainer = styled.div`
   height: 1000px;
   display: flex;
-  background: #f8f5f2;
+  background: #161637;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@ export const PricingWrapper = styled.div`
   align-items: center;
   grid-gap: 16px;
   padding: 0 50px;
-  
+
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
@@ -55,8 +55,10 @@ export const PricingCard = styled.div`
 `;
 
 export const PricingTopLine = styled.h1`
+  color: #fff;
   font-size: 24px;
   font-family: Roboto;
+  font-weight: 400;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -67,7 +69,7 @@ export const PricingH1 = styled.h1`
   font-size: 20px;
   margin: 16px 24px;
   font-family: Roboto;
-  font-weight: 500;
+  font-weight: 400;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -78,7 +80,7 @@ export const PricingH2 = styled.p`
   font-size: 13px;
   margin: 24px;
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 300;
   color: lightslategray;
 
   @media screen and (max-width: 768px) {
@@ -90,7 +92,7 @@ export const Price = styled.p`
   font-size: 24px;
   text-align: center;
   font-family: Roboto;
-  font-weight: 500;
+  font-weight: 400;
   color: #f59f0a;
 
   @media screen and (max-width: 768px) {
@@ -103,7 +105,7 @@ export const PricingList = styled.li`
   text-align: left;
   margin: 8px 24px;
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 300;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;

@@ -42,6 +42,7 @@ export const ButtonRouter = styled(Router)`
   color: #fff;
   font-size: 16px;
   font-family: Roboto, sans-serif;
+  font-weight: 300;
   outline: none;
   border: none;
   cursor: pointer;
