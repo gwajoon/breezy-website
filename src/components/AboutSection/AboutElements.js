@@ -3,22 +3,25 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   background: #f8f5f2;
   display: flex;
-  height: 700px;
   align-items: center;
   justify-content: center;
   position: relative;
+  min-width: 1500px;
+  min-height: 1000px;
+  width: 100%;
   padding: 0 30px;
-  flex-direction: row;
 
   @media screen and (max-width: 768px) {
-    height: 1200px;
-    width: 850px;
   }
 `;
 
-export const AboutContent = styled.div`
+export const AboutWrapper = styled.div`
   align-items: center;
   justify-content: center;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 
   @media screen and (max-width: 480px) {
     margin-left: 0;
@@ -26,23 +29,24 @@ export const AboutContent = styled.div`
   }
 `;
 
+export const AboutContent = styled.div`
+  align-items: center;
+  justify-content: center;
+`;
+
 export const AboutHeading = styled.h1`
   color: black;
   margin: 16px;
   font-size: 28px;
   text-align: center;
-  font-family: "Playfair Display";
-
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
+  font-family: "serif";
 `;
 
 export const AboutP = styled.p`
   margin: 16px;
   color: #404344;
   font-size: 18px;
-  font-family: Roboto, sans-serif;
+  font-family: Nunito, sans-serif;
   font-weight: 300;
   text-align: left;
   max-width: 700px;
@@ -75,12 +79,10 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   width: 700px;
-  border-radius: 25%;
+  border-radius: 20%;
 
-  @media screen and (max-width: 768px) {
-    width: 800px;
-    margin-top: 800px;
+  @media screen and (max-width: 960px) {
+    width: 500px;
     margin-right: 0;
-    opacity: 100%;
   }
 `;

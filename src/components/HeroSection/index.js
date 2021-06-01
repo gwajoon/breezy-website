@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import {
   HeroContainer,
   HeroContent,
-  HeroH1,
   HeroHeading,
   HeroP,
   HeroBtnWrapper,
-  HeroImg
+  HeroImg,
 } from "./HeroElements";
 import { Button, ArrowForward, ArrowRight } from "../ButtonElements";
-import homePic from "../../images/home.png"
+import homePic from "../../images/home.png";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -20,19 +19,24 @@ const HeroSection = () => {
 
   return (
     <HeroContainer id="home">
-      <HeroImg src={homePic}/>
+      <HeroImg src={homePic} />
       <HeroContent>
-        <HeroH1>Welcome to Breezy</HeroH1>
-        <HeroHeading>
-          Focus on growing your business and let us handle the boring stuff.
-        </HeroHeading>
+        <HeroHeading>Focus on growing your business</HeroHeading>
+        <HeroHeading>and let us handle the boring stuff.</HeroHeading>
         <HeroP>
           Let us take care of the corporate compliances and accounting
-          nightmare. We track compliance deadlines, file company resolutions and
-          make sure you can operate your company at ease.
+          nightmare.
         </HeroP>
+        <HeroP>We track compliance deadlines, file company resolutions </HeroP>
+        <HeroP>and make sure you can operate your company at ease.</HeroP>
+        <HeroP></HeroP>
         <HeroBtnWrapper>
-          <Button smooth to="about" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button
+            smooth
+            to="about"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+          >
             Find out more {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>

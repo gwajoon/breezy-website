@@ -14,7 +14,9 @@ import {
   MailIcon,
   PhoneIcon,
   Whatsapp,
+  WhatsappLink,
   SubmitMessage,
+  ErrorMessage,
 } from "./ContactElements";
 import QR from "../../images/qr-code.png";
 
@@ -66,7 +68,7 @@ const ContactSection = ({ big = true }) => {
               name="name"
             />
             {submitted && !values.name ? (
-              <span style={{ color: "red" }}> Please enter your name </span>
+              <ErrorMessage> Please enter your name </ErrorMessage>
             ) : null}
             <FormInput
               onChange={handleEmailInputChange}
@@ -75,10 +77,7 @@ const ContactSection = ({ big = true }) => {
               name="email"
             />
             {submitted && !values.email ? (
-              <span style={{ color: "red" }}>
-                {" "}
-                Please enter your email address{" "}
-              </span>
+              <ErrorMessage> Please enter your email address </ErrorMessage>
             ) : null}
             <FormInput
               onChange={handleNumberInputChange}
@@ -87,10 +86,7 @@ const ContactSection = ({ big = true }) => {
               name="number"
             />
             {submitted && !values.number ? (
-              <span style={{ color: "red" }}>
-                {" "}
-                Please enter your contact number{" "}
-              </span>
+              <ErrorMessage> Please enter your contact number </ErrorMessage>
             ) : null}
             <FormInput
               onChange={handleQuestionInputChange}
@@ -100,7 +96,7 @@ const ContactSection = ({ big = true }) => {
               name="question"
             />
             {submitted && !values.question ? (
-              <span style={{ color: "red" }}> Please enter your question </span>
+              <ErrorMessage> Please enter your question </ErrorMessage>
             ) : null}
             <FormButton onClick={handleSubmit}> Submit</FormButton>
             {submitted && valid ? (
@@ -122,22 +118,25 @@ const ContactSection = ({ big = true }) => {
               <PhoneIcon />
               <IconLabel>breezy@breeze.com</IconLabel>
             </Label>
+            <IconLabel
+              style={{ "text-align": "left", margin: "30px 0 0 10px" }}
+            >
+              Contact us on WhatsApp:
+            </IconLabel>
             <Whatsapp>
-              <IconLabel
-                style={{ "text-align": "left", margin: "30px 0 0 10px" }}
-              >
-                Scan here to contact us on WhatsApp:
-              </IconLabel>
               <img
                 src={QR}
                 alt="whatsapp QR code"
                 style={{
                   height: "200px",
                   width: "200px",
-                  margin: "15px 0 0 40px",
+                  margin: "15px 0 0 12px",
                 }}
               />
             </Whatsapp>
+            <WhatsappLink href="https://www.whatsapp.com/">
+              whatsapp link
+            </WhatsappLink>
           </Column2>
         </ContactContent>
       </ContactForm>

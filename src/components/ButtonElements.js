@@ -11,7 +11,7 @@ export const Button = styled(Link)`
   padding: 12px 30px;
   color: #fff;
   font-size: 16px;
-  font-family: Roboto, sans-serif;
+  font-family: Nunito, sans-serif;
   outline: none;
   border: none;
   cursor: pointer;
@@ -41,7 +41,7 @@ export const ButtonRouter = styled(Router)`
   margin-left: 30px;
   color: #fff;
   font-size: 16px;
-  font-family: Roboto, sans-serif;
+  font-family: Nunito, sans-serif;
   font-weight: 300;
   outline: none;
   border: none;

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Contact from "../components/ContactSection/index";
-import OtherNavbar from "../components/OtherNavbar";
-import OtherSidebar from "../components/OtherSidebar";
 import Footer from "../components/Footer";
+import HomeNavbar from "../components/HomeNavbar";
+import Sidebar from "../components/Sidebar";
 
 const ContactPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,8 +13,8 @@ const ContactPage = () => {
 
   return (
     <>
-      <OtherSidebar isOpen={isOpen} toggle={toggle} />
-      <OtherNavbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <HomeNavbar toggle={toggle} />
       <Contact></Contact>
       <Footer></Footer>
     </>

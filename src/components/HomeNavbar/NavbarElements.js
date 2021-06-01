@@ -10,11 +10,8 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   height: 80px;
   z-index: 10;
-
-  @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
-    width: 850px;
-  }
+  min-width: 1500px;
+  width: 100%;
 `;
 
 export const NavLogo = styled(LinkRouter)`
@@ -26,7 +23,7 @@ export const NavLogo = styled(LinkRouter)`
 `;
 
 export const Logo = styled.img`
-  height: 70px;
+  height: 120px;
   width: 120px;
   justify-content: center;
   align-items: center;
@@ -35,7 +32,8 @@ export const Logo = styled.img`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
+    color: #fff;
     display: block;
     position: absolute;
     top: 0;
@@ -69,7 +67,7 @@ export const NavLinks = styled(LinkScroll)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  font-family: Roboto;
+  font-family: Nunito;
   font-weight: 300;
 
   &.active {
@@ -79,14 +77,14 @@ export const NavLinks = styled(LinkScroll)`
 
 export const NavRouter = styled(LinkRouter)`
   color: #fff;
-  font-family: "Roboto":wght@300;
+  font-family: "Nunito":wght@300;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  font-family: Roboto;
+  font-family: Nunito;
   font-weight: 300;
 
   &.active {

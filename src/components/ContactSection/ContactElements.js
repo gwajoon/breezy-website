@@ -2,16 +2,13 @@ import styled from "styled-components";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 export const ContactContainer = styled.div`
-  height: 800px;
+  min-height: 1000px;
+  min-width: 1500px;
+  width: 100%;
   background: #f8f5f2;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media screen and (max-width: 480px) {
-    width: 850px;
-    height: 900px;
-  }
 `;
 
 export const ContactHeading = styled.h1`
@@ -19,8 +16,8 @@ export const ContactHeading = styled.h1`
   margin: 16px;
   font-size: 28px;
   text-align: center;
-  font-family: Roboto;
-  font-weight: 400;
+  font-family: Nunito;
+  font-weight: 300;
 `;
 
 export const ContactForm = styled.div`
@@ -52,13 +49,6 @@ export const ContactContent = styled.div`
 export const Column1 = styled.div`
   margin: 10px;
   width: 450px;
-
-  @media screen and (max-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin-left: 25px;
-  }
 `;
 
 export const Column2 = styled.div`
@@ -66,20 +56,12 @@ export const Column2 = styled.div`
   width: 300px;
   display: flex;
   flex-direction: column;
-
-  @media screen and (max-width: 480px) {
-    margin-left: 25px;
-  }
 `;
 
 export const Label = styled.div`
   margin: 15px;
   justify-content: center;
   align-items: center;
-
-  @media screen and (max-width: 480px) {
-    margin: 8px;
-  }
 `;
 
 export const IconLabel = styled.div`
@@ -88,12 +70,8 @@ export const IconLabel = styled.div`
   grid-area: col2;
   margin-left: 20px;
   float: left;
-  font-family: Roboto;
-  font-weight: 400;
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-  }
+  font-family: Nunito;
+  font-weight: 300;
 `;
 
 export const GPSIcon = styled(FaMapMarkerAlt)`
@@ -101,10 +79,6 @@ export const GPSIcon = styled(FaMapMarkerAlt)`
   grid-area: col2;
   float: left;
   height: 20px;
-
-  @media screen and (max-width: 480px) {
-    height: 20px;
-  }
 `;
 
 export const PhoneIcon = styled(FaPhoneAlt)`
@@ -112,10 +86,6 @@ export const PhoneIcon = styled(FaPhoneAlt)`
   grid-area: col2;
   float: left;
   height: 20px;
-
-  @media screen and (max-width: 480px) {
-    height: 20px;
-  }
 `;
 
 export const MailIcon = styled(FaEnvelope)`
@@ -123,10 +93,6 @@ export const MailIcon = styled(FaEnvelope)`
   color: #f45d48;
   float: left;
   height: 20px;
-
-  @media screen and (max-width: 480px) {
-    height: 20px;
-  }
 `;
 
 export const FormInput = styled.input`
@@ -135,11 +101,10 @@ export const FormInput = styled.input`
   margin: 10px 0;
   border-radius: 4px;
   width: 400px;
+  font-family: Nunito;
+  font-weight: 300;
   padding-bottom: ${({ big }) => (big ? "140px" : "10px")};
   grid-area: col1;
-
-  @media screen and (max-width: 480px) {
-    width: 400px;
   }
 `;
 
@@ -150,18 +115,16 @@ export const FormButton = styled.button`
   border: none;
   border-radius: 4px;
   font-size: 14px;
+  font-family: Nunito;
+  font-weight: 300;
   color: #fff;
   cursor: pointer;
   width: 400px;
   grid-area: col1;
-
-  @media screen and (max-width: 480px) {
-    width: 400px;
-  }
 `;
 
 export const Whatsapp = styled.div`
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     display: none;
   }
 `;
@@ -170,13 +133,28 @@ export const SubmitMessage = styled.div`
   font-size: 20px;
   text-align: center;
   justify-items: center;
-  font-family: Roboto;
+  font-family: Nunito;
+  font-weight: 300;
   color: black;
   height: 50px;
   width: 400px;
   margin-top: 30px;
+`;
 
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
+export const ErrorMessage = styled.span`
+  font-family: Nunito;
+  font-weight: 300;
+  color: red;
+`;
+
+export const WhatsappLink = styled.a`
+  font-size: 16px;
+  margin-left: 12px;
+  font-family: Nunito;
+  font-weight: 400;
+  display: none;
+
+  @media screen and (max-width: 760px) {
+    display: flex;
   }
 `;

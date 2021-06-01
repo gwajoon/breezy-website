@@ -30,10 +30,7 @@ const Services = () => {
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon
-            src={Icon2}
-            style={{ height: "200px", width: "200px" }}
-          />
+          <ServicesIcon src={Icon2} />
           <ServicesHeading> Online Corporate Secretary</ServicesHeading>
           <ServicesP>
             {" "}
@@ -43,7 +40,10 @@ const Services = () => {
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} style={{ height: "180px" }} />
+          <ServicesIcon
+            src={Icon3}
+            style={{ height: "180px", "margin-bottom": "20px" }}
+          />
           <ServicesHeading> Accounting and Taxation Advisory</ServicesHeading>
           <ServicesP>
             {" "}
