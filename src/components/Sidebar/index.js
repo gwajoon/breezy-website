@@ -23,15 +23,15 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="about" onClick={toggle}>
             About Us
           </SidebarLink>
-          <SidebarRoute to="pricing" onClick={toggle}>
+          <SidebarLink to="pricing" onClick={toggle}>
             Pricing
-          </SidebarRoute>
-          <SidebarRoute to="contact" onClick={toggle}>
+          </SidebarLink>
+          <SidebarLink to="contact" onClick={toggle}>
             Contact Us
-          </SidebarRoute>
-          <SidebarRoute to="guides" onClick={toggle}>
+          </SidebarLink>
+          <SidebarLink to="guides" onClick={toggle}>
             Guides and Services
-          </SidebarRoute>
+          </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

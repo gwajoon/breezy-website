@@ -9,6 +9,10 @@ export const ServicesContainer = styled.div`
   width: 100%;
   min-width: 1500px;
   min-height: 800px;
+
+  @media screen and (max-width: 960px) {
+    height: 2000px;
+  }
 `;
 
 export const ServicesWrapper = styled.div`
@@ -22,9 +26,8 @@ export const ServicesWrapper = styled.div`
   min-width: 100%;
 
   @media screen and (max-width: 960px) {
-    display: grid;
+    flex-direction: column;
     height: 1500px;
-    grid-template-rows: 150px 1fr;
   }
 `;
 
@@ -43,6 +46,10 @@ export const ServicesCard = styled.div`
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 600px;
   }
 `;
 
