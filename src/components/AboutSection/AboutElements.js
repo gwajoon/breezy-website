@@ -8,7 +8,6 @@ export const AboutContainer = styled.div`
   position: relative;
   min-height: 900px;
   width: 100%;
-  padding: 0 30px;
 
   @media screen and (max-width: 768px) {
   }
@@ -21,6 +20,7 @@ export const AboutWrapper = styled.div`
   display: flex;
   flex-direction: row;
   height: 100%;
+  padding: 0 60px;
 
   @media screen and (max-width: 480px) {
     margin-left: 0;

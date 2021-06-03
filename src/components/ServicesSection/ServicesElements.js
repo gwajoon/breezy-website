@@ -20,8 +20,7 @@ export const ServicesWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  grid-gap: 16px;
-  padding: 0 50px;
+  grid-gap: 30px;
   min-width: 100%;
 
   @media screen and (max-width: 960px) {
