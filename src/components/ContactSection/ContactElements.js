@@ -3,7 +3,6 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 export const ContactContainer = styled.div`
   min-height: 1000px;
-  min-width: 1500px;
   width: 100%;
   background: #f8f5f2;
   display: flex;

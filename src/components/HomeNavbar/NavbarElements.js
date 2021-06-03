@@ -7,19 +7,16 @@ export const NavbarContainer = styled.div`
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: space-between;
   height: 80px;
   z-index: 10;
-  min-width: 1500px;
   width: 100%;
+  padding: 0 100px;
 `;
 
 export const NavLogo = styled(LinkRouter)`
   cursor: pointer;
   display: flex;
   align-items: center;
-  margin-left: 24px;
-  margin-right: 24px;
 `;
 
 export const Logo = styled.img`
@@ -68,7 +65,7 @@ export const NavLinks = styled(LinkScroll)`
   height: 100%;
   cursor: pointer;
   font-family: Nunito;
-  font-weight: 300;
+  font-weight: 600;
 
   &.active {
     border-bottom: 6px solid #f59f0a;
@@ -77,7 +74,6 @@ export const NavLinks = styled(LinkScroll)`
 
 export const NavRouter = styled(LinkRouter)`
   color: #fff;
-  font-family: "Nunito":wght@300;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -85,7 +81,7 @@ export const NavRouter = styled(LinkRouter)`
   height: 100%;
   cursor: pointer;
   font-family: Nunito;
-  font-weight: 300;
+  font-weight: 500;
 
   &.active {
     border-bottom: 6px solid #f59f0a;

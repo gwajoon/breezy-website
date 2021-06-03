@@ -12,6 +12,7 @@ import {
   PricingActionText,
   PricingIcon,
 } from "./PricingElements";
+import { Button } from "../ButtonElements";
 import search from "../../images/search.svg";
 
 const Pricing = () => {
@@ -82,14 +83,14 @@ const Pricing = () => {
           </PricingH1>
           <PricingH1> Please contact us </PricingH1>
           <PricingIcon src={search} />
-          <PricingAction
+          <Button
             style={{ width: "300px", "border-radius": "5px" }}
-            to="/contact"
+            smooth
+            to="contact"
           >
-            <PricingActionText>
-              Contact us for more information
-            </PricingActionText>
-          </PricingAction>
+            {" "}
+            Contact us for more information
+          </Button>
         </PricingCard>
       </PricingWrapper>
     </PricingContainer>

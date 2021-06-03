@@ -6,8 +6,7 @@ export const AboutContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  min-width: 1500px;
-  min-height: 1000px;
+  min-height: 900px;
   width: 100%;
   padding: 0 30px;
 

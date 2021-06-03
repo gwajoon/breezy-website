@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 export const PricingContainer = styled.div`
   min-height: 1000px;
-  min-width: 1500px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -32,7 +31,7 @@ export const PricingWrapper = styled.div`
 export const PricingCard = styled.div`
   background: #fff;
   display: flex;
-  width: 600px;
+  width: 500px;
   flex-direction: column;
   border-radius: 10px;
   height: 750px;

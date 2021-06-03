@@ -5,10 +5,8 @@ export const HeroContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 30px;
-  min-width: 1500px;
-  min-height: 1000px;
   width: 100%;
+  min-height: 1000px;
 `;
 
 export const HeroContent = styled.div`
@@ -27,9 +25,6 @@ export const HeroHeading = styled.div`
   color: #fff;
   font-family: serif;
   font-weight: 400;
-
-  @media screen and (max-width: 768px) {
-  }
 `;
 
 export const HeroP = styled.p`
@@ -55,12 +50,10 @@ export const HeroBtnWrapper = styled.div`
 `;
 
 export const HeroImg = styled.img`
-  min-height: 800px;
-  min-width: 800px;
+  min-height: 100%;
+  min-width: 100%;
 
   @media screen and (max-width: 768px) {
     margin-top: 200px;
-    min-height: 100%;
-    min-width: 100%;
   }
 `;

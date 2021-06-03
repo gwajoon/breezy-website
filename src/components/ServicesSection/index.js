@@ -54,7 +54,7 @@ const Services = () => {
         </ServicesCard>
       </ServicesWrapper>
       <ServicesBtnWrap>
-        <Button to="pricing" style={{ "text-decoration": "none" }}>
+        <Button smooth to="pricing" style={{ "text-decoration": "none" }}>
           {" "}
           Pricing{" "}
         </Button>
