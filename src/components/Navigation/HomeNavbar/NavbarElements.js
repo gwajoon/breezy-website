@@ -11,6 +11,7 @@ export const NavbarContainer = styled.div`
   z-index: 10;
   width: 100%;
   padding: 0 100px;
+  grid-gap: 30px;
 `;
 
 export const NavLogo = styled(LinkRouter)`
@@ -63,6 +64,7 @@ export const NavLinks = styled(LinkScroll)`
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  width: 100%;
   cursor: pointer;
   font-family: Nunito;
   font-weight: 600;
@@ -76,9 +78,11 @@ export const NavRouter = styled(LinkRouter)`
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
-  padding: 0 1rem;
+  margin: 0 16px;
   height: 100%;
+  width: 100%;
   cursor: pointer;
   font-family: Nunito;
   font-weight: 500;
