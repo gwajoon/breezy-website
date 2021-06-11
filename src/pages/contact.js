@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Contact from "../components/ContactSection/index";
-import Footer from "../components/Footer";
-import HomeNavbar from "../components/HomeNavbar";
-import Sidebar from "../components/Sidebar";
+import Footer from "../components/Navigation/Footer";
+import HomeNavbar from "../components/Navigation/HomeNavbar";
+import Sidebar from "../components/Navigation/Sidebar";
 
 const ContactPage = () => {
   const [isOpen, setIsOpen] = useState(false);

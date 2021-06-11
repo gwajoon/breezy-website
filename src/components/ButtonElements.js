@@ -19,6 +19,7 @@ export const Button = styled(Link)`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
 
   &:hover {
     transition: all 0.2s ease-in-out;
@@ -38,22 +39,21 @@ export const ButtonRouter = styled(Router)`
   background: #f9a825;
   white-space: nowrap;
   padding: 12px 30px;
-  margin-left: 30px;
+  margin: 10px;
   color: #fff;
   font-size: 16px;
   font-family: Nunito, sans-serif;
   font-weight: 300;
-  outline: none;
-  border: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #000;
+    background: #1d1d44;
   }
 
   @media screen and (max-width: 768px) {

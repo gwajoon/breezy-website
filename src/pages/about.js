@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Pricing from "../components/PricingSection/index";
+import AboutSection from "../components/AboutPage/AboutSection";
 import Footer from "../components/Navigation/Footer";
-import Sidebar from "../components/Navigation/Sidebar";
 import HomeNavbar from "../components/Navigation/HomeNavbar";
+import Sidebar from "../components/Navigation/Sidebar";
+import TeamSection from "../components/AboutPage/TeamSection";
 
-const PricingPage = () => {
+const AboutPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -15,10 +16,11 @@ const PricingPage = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HomeNavbar toggle={toggle} />
-      <Pricing></Pricing>
-      <Footer></Footer>
+      <AboutSection />
+      <TeamSection />
+      <Footer />
     </>
   );
 };
 
-export default PricingPage;
+export default AboutPage;

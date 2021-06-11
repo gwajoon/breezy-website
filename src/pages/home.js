@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import HomeNavbar from "../components/HomeNavbar";
-import Sidebar from "../components/Sidebar";
-import HeroSection from "../components/HeroSection";
-import Services from "../components/ServicesSection";
-import Footer from "../components/Footer";
-import AboutSection from "../components/AboutSection";
-import Pricing from "../components/PricingSection";
-import Contact from "../components/ContactSection";
+import HomeNavbar from "../components/Navigation/HomeNavbar";
+import Sidebar from "../components/Navigation/Sidebar";
+import Footer from "../components/Navigation/Footer";
+import CollaborateSection from "../components/Navigation/Collaborate";
+import HeroSection from "../components/HomePage/HeroSection";
+import Services from "../components/HomePage/ServicesSection";
+import OfferSection from "../components/HomePage/OfferSection";
 
-const Home = () => {
+import Pricing from "../components/HomePage/PricingSection";
+
+const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -20,13 +21,13 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HomeNavbar toggle={toggle} />
       <HeroSection />
-      <AboutSection />
+      <OfferSection />
       <Services />
       <Pricing />
-      <Contact />
+      <CollaborateSection />
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default HomePage;
